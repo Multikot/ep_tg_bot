@@ -34,6 +34,6 @@ class BotService():
 services = BotService()
 
 
-# try:
+    # try:
     #     await bot.send_photo(message.chat.id, photo='https://ibb.co/DgdTNLc')
     # except BadRequest:
