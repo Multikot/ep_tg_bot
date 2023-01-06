@@ -10,7 +10,9 @@ class BotService():
 
     @staticmethod
     async def get_war_answer():
-        return 'Here will be war'
+        answer = 'Choose which center you want to get an attack command for.\n\
+            /mim'
+        return answer
 
     @staticmethod
     async def get_myth_answer():
@@ -24,6 +26,10 @@ class BotService():
     async def get_info_answer():
         answer = 'Info section: you can give feedback or donate to the development of the project'
         return answer
+
+    @staticmethod
+    async def get_mim_answer():
+        return 'Here will be picture about better command attack to mim'
 
 services = BotService()
 
