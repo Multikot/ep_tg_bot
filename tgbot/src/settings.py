@@ -3,6 +3,7 @@ from aiogram import Bot, Dispatcher
 from pydantic import BaseModel
 from dotenv import load_dotenv
 import os
+from logger import logger
 
 load_dotenv()
 
@@ -24,7 +25,7 @@ class BotSettings():
         try:
             return Bot(token=settings.token)
         except ValidationError:
-            raise('Token is invalid, message sending mode is disabled')
+            logger.error('Token is invalid, message sending mode is disabled')
 
 bot: Bot = BotSettings().get_bot()
 dp: Dispatcher = Dispatcher(bot)
