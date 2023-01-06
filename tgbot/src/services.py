@@ -1,7 +1,7 @@
 class BotService():
 
     @staticmethod
-    async def get_start_answer():
+    async def get_start_answer() -> str:
         answer = 'This bot will help you find the most effective teams for your goals.\n\
         WAR menu /war,\n\
         EVENTS menu /events,\n\
@@ -9,26 +9,26 @@ class BotService():
         return answer
 
     @staticmethod
-    async def get_war_answer():
+    async def get_war_answer() -> str:
         answer = 'Choose which center you want to get an attack command for.\n\
             /mim'
         return answer
 
     @staticmethod
-    async def get_myth_answer():
+    async def get_myth_answer() -> str:
         return 'Here will be myth'
 
     @staticmethod
-    async def get_event_answer():
+    async def get_event_answer() -> str:
         return 'Here will be events'
     
     @staticmethod
-    async def get_info_answer():
+    async def get_info_answer() -> str:
         answer = 'Info section: you can give feedback or donate to the development of the project'
         return answer
 
     @staticmethod
-    async def get_mim_answer():
+    async def get_mim_answer() -> str:
         return 'Here will be picture about better command attack to mim'
 
 services = BotService()

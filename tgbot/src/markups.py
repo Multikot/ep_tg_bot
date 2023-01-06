@@ -16,7 +16,7 @@ class MarkUp():
         self.btn_donation = KeyboardButton('Donation')
         self.btn_feedback = KeyboardButton('Feedback')
 
-        self.btn_mim_center = KeyboardButton('Mim')
+        self.btn_mim_hero = KeyboardButton('Mim')
 
     async def get_info_menu(self):
         return ReplyKeyboardMarkup(resize_keyboard=True).add(
@@ -30,7 +30,7 @@ class MarkUp():
 
     async def get_war_menu(self):
         return ReplyKeyboardMarkup(resize_keyboard=True).add(
-            self.btn_mim_center, self.btn_main
+            self.btn_mim_hero, self.btn_main
         )
 
     async def set_default_commands(self, dispatcher: Dispatcher):
